@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Lofi Option 1",
+        "url": "https://www.youtube.com/watch?v=D5CnzCepdQ8",
+        "description": "User-selected Lofi video 1.",
+        "thumbnail": "https://img.youtube.com/vi/D5CnzCepdQ8/mqdefault.jpg"
+    },
+    {
+        "title": "Lofi Option 2",
+        "url": "https://www.youtube.com/watch?v=4xDzrJKXOOY",
+        "description": "User-selected Lofi video 2.",
+        "thumbnail": "https://img.youtube.com/vi/4xDzrJKXOOY/mqdefault.jpg"
+    },
+    {
+        "title": "Lofi Option 3",
+        "url": "https://www.youtube.com/watch?v=rPjez8z61rI",
+        "description": "User-selected Lofi video 3.",
+        "thumbnail": "https://img.youtube.com/vi/rPjez8z61rI/mqdefault.jpg"
+    },
+    {
+        "title": "Lofi Option 4",
+        "url": "https://www.youtube.com/watch?v=TfWotiyXGfI",
+        "description": "User-selected Lofi video 4.",
+        "thumbnail": "https://img.youtube.com/vi/TfWotiyXGfI/mqdefault.jpg"
+    },
+    {
+        "title": "Lofi Option 5",
+        "url": "https://www.youtube.com/watch?v=7NOSDKb0HlU",
+        "description": "User-selected Lofi video 5.",
+        "thumbnail": "https://img.youtube.com/vi/7NOSDKb0HlU/mqdefault.jpg"
+    }
+]

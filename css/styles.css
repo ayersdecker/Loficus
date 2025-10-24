@@ -1,0 +1,124 @@
+/* Dark mode styles */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #121212; /* dark grey background requested */
+    color: #ffffff; /* all text white */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.channel-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.channel-item {
+    background-color: #0f1724;
+    border: 1px solid rgba(255,255,255,0.04);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    transition: box-shadow 0.18s, transform 0.18s;
+}
+
+.channel-item:hover {
+    box-shadow: 0 6px 18px rgba(11,18,32,0.6);
+    transform: translateY(-2px);
+}
+
+.channel-title {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+.channel-description {
+    color: #ffffff;
+}
+
+.player {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #07101a;
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 8px;
+}
+
+.player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Buttons: keep Bootstrap styles but tweak primary contrast for dark bg */
+.btn-primary {
+    background-color: #6b8cff !important;
+    border-color: #5676e6 !important;
+    color: #ffffff !important;
+}
+
+.btn-secondary {
+    background-color: #1f2a37 !important;
+    border-color: rgba(255,255,255,0.06) !important;
+    color: #ffffff !important;
+}
+
+.btn-outline-secondary {
+    color: #ffffff !important;
+    border-color: rgba(255,255,255,0.06) !important;
+}
+
+.btn:hover {
+    filter: brightness(1.06);
+}
+
+/* Player embed and thumbnails */
+.player-card .embed-responsive {
+    min-height: 300px;
+    background: linear-gradient(180deg,#07101a 0%, #081424 100%);
+}
+
+.card-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.embed-responsive .embed-responsive-item {
+    background: transparent;
+}
+
+/* placeholder text */
+#player-placeholder {
+    color: #ffffff;
+}
+
+.card {
+    background-color: rgba(10,16,24,0.6);
+    border: 1px solid rgba(255,255,255,0.02);
+}
+
+a {
+    color: #ffffff;
+}
+
+.text-muted {
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .player-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .player-card .embed-responsive { min-height: 200px; }
+}

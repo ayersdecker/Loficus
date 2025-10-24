@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#121212">
+    <title>Lofi Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Loficus</h1>
+            <p>Your gateway to relaxing Lofi music streams.</p>
+        </header>
+
+        <main>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="card player-card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <h5 id="player-title" class="mb-0">Select a channel</h5>
+                                    <small id="player-desc" class="text-muted">Click a channel on the right to start listening.</small>
+                                </div>
+                                <div class="btn-group btn-group-sm" role="group" aria-label="player-controls">
+                                    <button id="play-btn" class="btn btn-primary" disabled>Play</button>
+                                    <button id="pause-btn" class="btn btn-secondary" disabled>Stop</button>
+                                    <button id="mute-btn" class="btn btn-outline-secondary" disabled>Muted</button>
+                                </div>
+                            </div>
+
+                            <div class="embed-responsive embed-responsive-16by9 bg-dark" id="player-wrap">
+                                <div id="player-placeholder" class="d-flex align-items-center justify-content-center h-100 text-light">
+                                    Select a channel to play
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h6>Now Playing</h6>
+                            <p id="now-playing" class="mb-0 text-truncate">Nothing playing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div id="channel-list" class="row">
+                        <!-- Channel items will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center my-4">
+            <p>&copy; 2025 Loficus. All rights reserved.</p>
+            <a href="about.html">About</a>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
