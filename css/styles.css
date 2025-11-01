@@ -1,7 +1,11 @@
-/* Dark mode styles */
 body {
     font-family: 'Inter', Arial, sans-serif;
-    background-color: #121212; /* dark grey background requested */
+    /* animated GIF background (no overlay) */
+    background-color: #121212; /* fallback */
+    background-image: url('../assets/img/lofi-cafe.gif');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: #ffffff; /* all text white */
     margin: 0;
     padding: 0;
@@ -74,6 +78,7 @@ h1, h2 {
 }
 
 .btn-outline-secondary {
+    background-color: #8c8d8f !important;
     color: #ffffff !important;
     border-color: rgba(255,255,255,0.06) !important;
 }
